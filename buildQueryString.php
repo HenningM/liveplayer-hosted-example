@@ -5,12 +5,12 @@
   $claims = [
     'iat' => time(),
     'jti' => uniqid(),
-    'cid' => '', // our customer ID
+    'cid' => '', // your customer ID
     'mid' => '', // match ID
     'ip'  => '' // end-user IP
   ];
 
-  $lcoApiKey = ''; // our lco API key
+  $lcoApiKey = ''; // your lco API key
   
   $token = JWT::encode($claims, $lcoApiKey);
   $cid = $claims["cid"];
