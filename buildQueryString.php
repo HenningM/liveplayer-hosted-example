@@ -17,6 +17,4 @@
   $mid = $claims["mid"];
   $data = array('cid'=>$cid, 'token'=>$token, 'mid'=>$mid);
   $queryString = http_build_query($data);
-
-  print_r($queryString);
 ?>
